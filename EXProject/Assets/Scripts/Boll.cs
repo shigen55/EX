@@ -8,6 +8,7 @@ public class Boll : MonoBehaviour
     Vector3 startpos;
     Rigidbody rd;
     public float speed;
+    public float wollHitSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,10 @@ public class Boll : MonoBehaviour
         {
             transform.position = startpos;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }
